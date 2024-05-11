@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="w-75 mx-auto bg-info theform  ">
+        <h1 class="text-center"> crud system</h1>
+        <div>
+            <label for="inputProductName">product:</label>
+    <input oninput="validname()" type="text" class="form-control my-1 is-invalid "id="inputProductName">
+    </div>
+    <div>
+        <label for="inputProductCatagory">catagory:</label>
+<input type="text" class="form-control my-1 "id="inputProductCatagory">
+</div>
+<div>
+    <label for="inputProductPrice">price:</label>
+<input type="number" class="form-control my-1 "id="inputProductPrice">
+</div>
+<div>
+    <label for="inputProductDescription">description:</label>
+<input type="text" class="form-control my-1 "id="inputProductDescription">
+</div>
+<button onclick="addproduct()" class="btn bg-primary w-100 my-2" id="addbtn">add</button>
+<button  class="btn bg-primary w-100 my-2 d-none"id="updatebtn">update</button>
+<table class="table my-3 text-center">
+    <thead>
+        <tr>
+            <td>id</td>
+            <td>name</td>
+            <td>catagory</td>
+            <td>price</td>
+            <td>description</td>
+            <td>action</td>
+        </tr>
+    </thead>
+    <tbody id="tablebody">
+
+    </tbody>
+
+</table>
+    
+    </div>
+    
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
